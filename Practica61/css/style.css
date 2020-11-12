@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER */
+header h1{
+  text-align: center;
+}
+
+header ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0d3749;
+  display: flex;
+  justify-content: center;
+}
+
+header ul li{
+  float: left;
+}
+
+header ul li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.8em 0.8em;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+
+
+
+/* MAIN */
+main{
+  width: 79%;
+  display: inline-block;
+  padding-bottom: 60px;
+  padding-top:30px;
+}
+
+main section{
+  width: 80%;
+  margin-left: 5em;
+}
+
+main section article{
+  display: flex;
+  text-align: justify;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+
+main section h1{
+  text-align: center;
+}
+
+main section img{
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+}
+
+aside{
+  display: inline-block;
+  width: 20%;
+  overflow: auto;
+  padding-bottom: 30em;
+}
+
+aside section{
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
+aside section a{
+  margin-bottom: 2em;
+}
+
+aside section h3{
+  margin-left: 0.5em;
+}
+
+
+
+/* FOOTER */
+footer{
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+}
+footer h3{
+  text-align: center;
+}
