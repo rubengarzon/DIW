@@ -41,42 +41,8 @@
                 HTML</h3>
         </div>
        
-
         <section>
-            <article>
-                <h3>transition</h3>
-                <p>Es una propiedad abreviada que se puede usar para especificar: transition-property,
-                    transition-duration, transition-timing-function y transition-delay</p>
-                <h4>Sintaxis</h4>
-                <pre
-                    class="line-numbers"><code class="language-css">transition: property duration timing-function delay;</code></pre>
-                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
-                <ul>
-                    <li>transition-property: espedifica el nombre de la propiedad CSS sobre la que se
-                        hara la transicion.
-                    </li>
-                    <li>transition-duration: especifica el tiempo el segundos o milisegundos que durara la transicion
-                    </li>
-                    <li>transition-timing-function: da la velocidad de la curva de la transicion</li>
-                    <li>transition-delay: define cuando empezara la transicion</li>
-
-                </ul>
-
-                <h4>Ejemplos:</h4>
-                <pre class="line-numbers"><code class="language-css">
-                    .transition{
-                        width: 100px;
-                        height: 100px;
-                        background-color: #0000FF;
-                        transition: width 2s, height 2s, background-color 2s, transform 2s;
-                      }
-                      .transition:hover {
-                        background-color: #FFCCCC;
-                        width: 200px;
-                        height: 200px;
-                      }</code></pre>
-                <div class="transition"></div>
-            </article>
+          
 
             <article>
                 <h3>transition-delay</h3>
@@ -92,17 +58,17 @@
 
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">
-                    .transition-delay{
-                        width: 100px;
-                        height: 100px;
-                        background-color: #0000FF;
-                        transition-delay: 2s;
-                      }
-                      .transition-delay:hover {
-                        background-color: #FFCCCC;
-                        width: 200px;
-                        height: 200px;
-                      }</code></pre>
+.transition-delay{
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition-delay: 2s;
+    }
+.transition-delay:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    }</code></pre>
 
                 <div class="transition-delay"></div>
 
@@ -123,17 +89,17 @@
 
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css"> 
-                    .transition-duration{
-                    width: 100px;
-                    height: 100px;
-                    background-color: #0000FF;
-                    transition-duration: 3s;
-                  }
-                  .transition-duration:hover {
-                    background-color: #FFCCCC;
-                    width: 200px;
-                    height: 200px;
-                  }</code></pre>
+.transition-duration{
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition-duration: 3s;
+    }
+.transition-duration:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    }</code></pre>
                 <div class="transition-duration"></div>
             </article>
 
@@ -152,18 +118,34 @@
                 </ul>
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">div {
-     width: 100px;
-     height: 100px;
-     background: red;
-     transition-property: width;
-     transition-duration: 2s;
-    }
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+}
                   
-    div:hover {
-     width: 300px;
-    }</code></pre>
+div:hover {
+    width: 300px;
+}</code></pre>
 
-                <div class="trbox">
+                <div class="transition-property">
+                    Transition-property
+                </div>
+
+                <pre class="line-numbers"><code class="language-css">div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-property: width heigh;
+    transition-duration: 2s;
+}
+                                      
+div:hover {
+    width: 300px;
+    height: 200px;
+}</code></pre>
+                <div class="transition-property">
                     Transition-property
                 </div>
             </article>
@@ -205,56 +187,58 @@
                 </ul>
 
                 <h4>Ejemplos:</h4>
-                <pre class="line-numbers"><code class="language-css">.ease {
-        transition-timing-function: ease;
-    }
-    .easein {
-        transition-timing-function: ease-in;
-    }
-    .easeout {
-        transition-timing-function: ease-out;
-    }
-    .easeinout {
-        transition-timing-function: ease-in-out;
-    }
-    .linear {
-        transition-timing-function: linear;
-    }
+                <pre class="line-numbers"><code class="language-css">
+.ease {
+    transition-timing-function: ease;
+}
+.easein {
+    transition-timing-function: ease-in;
+}
+.easeout {
+    transition-timing-function: ease-out;
+}
+.easeinout {
+    transition-timing-function: ease-in-out;
+}
+.linear {
+    transition-timing-function: linear;
+}
     </code></pre>
 
-                <div class="trbox" id="linear">
+                <div class="transition-timing-function" id="linear">
                     linear
                 </div>
-                <div class="trbox" id="ease">
+                <div class="transition-timing-function" id="transition-timing-function-ease">
                     ease
                 </div>
-                <div class="trbox" id="easin">
+                <div class="transition-timing-function" id="transition-timing-function-easin">
                     easein
                 </div>
-                <div class="trbox" id="easeout">
+                <div class="transition-timing-function" id="transition-timing-function-easeout">
                     easeout
                 </div>
-                <div class="trbox" id="easeinout">
+                <div class="transition-timing-function" id="transition-timing-function-easeinout">
                     easeinout
                 </div>
 
-                <pre class="line-numbers"><code class="language-css">.jump-start {
-        transition-timing-function: steps(5, jump-start);
+                <pre class="line-numbers"><code class="language-css">
+.jump-start {
+    transition-timing-function: steps(5, jump-start);
     }
-    .jump-end {
-        transition-timing-function: steps(5, jump-end);
+.jump-end {
+    transition-timing-function: steps(5, jump-end);
     }
-    .jump-none {
-        transition-timing-function: steps(5, jump-none);
+.jump-none {
+    transition-timing-function: steps(5, jump-none);
     }
-    .jump-both {
-        transition-timing-function: steps(5, jump-both);
+.jump-both {
+    transition-timing-function: steps(5, jump-both);
     }
-    .step-start {
-        transition-timing-function: step-start;
+.step-start {
+    transition-timing-function: step-start;
     }
-    .step-end {
-        transition-timing-function: step-end;
+.step-end {
+    transition-timing-function: step-end;
     }</code></pre>
 
                 <div class="trbox" id="jump-start">
@@ -275,6 +259,40 @@
                 <div class="trbox" id="step-end">
                     step-end
                 </div>
+            </article>
+            <article>
+                <h3>transition</h3>
+                <p>Es una propiedad con shorthand que se puede usar para agrupar proiedades, las propiedades que acepta son: transition-property,
+                    transition-duration, transition-timing-function y transition-delay</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition: property duration timing-function delay;</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>transition-property: espedifica el nombre de la propiedad CSS sobre la que se
+                        hara la transicion.
+                    </li>
+                    <li>transition-duration: especifica el tiempo el segundos o milisegundos que durara la transicion
+                    </li>
+                    <li>transition-timing-function: da la velocidad de la curva de la transicion</li>
+                    <li>transition-delay: define cuando empezara la transicion</li>
+
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">
+.transition{
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    }
+.transition:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    }</code></pre>
+                <div class="transition"></div>
             </article>
         </section>
     </main>

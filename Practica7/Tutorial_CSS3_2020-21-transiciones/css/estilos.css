@@ -199,8 +199,8 @@ span{
 }
 
 /*
-  Parte Fernando del Rosal
-  */
+ * author: Fernando del Rosal
+*/
 .transition{
 	width: 100px;
     height: 100px;
@@ -237,18 +237,39 @@ span{
   }
 
   /*
-  Parte Ruben Garzon
+  * author: Rubén Garzón
   */
-  .trbox {
+  .transition-property {
 	width: 6em;
 	height: 3em;
 	margin-bottom: 1em;
-	background: red;
-	transition: width 2s;
-	text-align: center;
+	background: #0000FF;
+	transition-property: width;
+	transition-duration: 2s;
+	text-align: vertical;
+	color: white;
+	font-weight: bold;
 }
-				 
-.trbox:hover {
+
+		 
+.transition-property:hover {
+	width: 300px;
+}
+
+.transition-timing-function {
+	width: 6em;
+	height: 3em;
+	margin-bottom: 1em;
+	background: #0000FF;
+	transition-property: width;
+	transition-duration: 2s;
+	text-align: vertical;
+	color: white;
+	font-weight: bold;
+}
+
+		 
+.transition-timing-function:hover {
 	width: 300px;
 }
 
@@ -286,6 +307,7 @@ span{
 #step-end {
     transition-timing-function: step-end;
 }
+
 @media only screen and (min-width:800px){
 	nav>ul>li{
 		width: 45%;
